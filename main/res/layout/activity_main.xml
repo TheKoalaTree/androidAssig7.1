@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="192dp"
+        android:layout_height="176dp"
+        android:layout_above="@id/btnCreateNote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@mipmap/ic_launcher" />
+   <Button
+       android:id="@+id/btnCreateNote"
+       android:layout_centerInParent="true"
+       android:text="CREATE A NEW NOTE"
+       android:layout_width="250dp"
+       android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_below="@id/btnCreateNote"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnNoteList"
+        android:layout_centerHorizontal="true"
+        android:text="SHOW ALL NOTES"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
